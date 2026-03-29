@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - HomeFixAI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">🏠 HomeFix<span>AI</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="chatbot.html">AI Chatbot</a></li>
+            <li><a href="booking.html">My Bookings</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <h2 class="section-title">Our Services</h2>
+        
+        <!-- FILTER BUTTONS -->
+        <div style="text-align: center; margin-bottom: 30px;">
+            <button onclick="filterServices('all')" class="hero-btn" style="padding: 8px 20px; font-size: 14px; margin: 5px;">All</button>
+            <button onclick="filterServices('AC')" class="hero-btn" style="padding: 8px 20px; font-size: 14px; margin: 5px;">🌡️ AC</button>
+            <button onclick="filterServices('Plumbing')" class="hero-btn" style="padding: 8px 20px; font-size: 14px; margin: 5px;">🔧 Plumbing</button>
+            <button onclick="filterServices('Electrical')" class="hero-btn" style="padding: 8px 20px; font-size: 14px; margin: 5px;">⚡ Electrical</button>
+            <button onclick="filterServices('Cleaning')" class="hero-btn" style="padding: 8px 20px; font-size: 14px; margin: 5px;">🧹 Cleaning</button>
+        </div>
+
+        <div class="services-grid" id="servicesContainer">
+            <!-- Filled by JavaScript -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>🏠 HomeFixAI © 2025 | AI-Powered Home Services</p>
+    </footer>
+
+    <script src="js/services.js"></script>
+
+</body>
+</html>

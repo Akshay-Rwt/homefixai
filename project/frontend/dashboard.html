@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provider Dashboard - HomeFixAI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">🏠 HomeFix<span>AI</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="dashboard-container">
+        <h2 class="section-title">Provider Dashboard</h2>
+
+        <!-- STATS -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" id="totalJobs">5</div>
+                <div class="stat-label">Total Jobs</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="pendingJobs">2</div>
+                <div class="stat-label">Pending</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="earnings">₹2,450</div>
+                <div class="stat-label">Total Earnings</div>
+            </div>
+        </div>
+
+        <!-- ASSIGNED JOBS -->
+        <h3 style="margin-bottom: 15px;">📋 Assigned Jobs</h3>
+        <div id="jobsList">
+            <div class="booking-card">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <h3>AC Repair</h3>
+                    <span class="status pending">Pending</span>
+                </div>
+                <p>📍 123, MG Road, Delhi</p>
+                <p>📅 2025-01-20 | ⏰ 10:00 AM</p>
+                <p>💰 ₹499</p>
+                <button class="book-btn" style="width:auto; margin-top:10px;">Accept Job ✅</button>
+            </div>
+
+            <div class="booking-card">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <h3>Plumber - Pipe Repair</h3>
+                    <span class="status confirmed">Confirmed</span>
+                </div>
+                <p>📍 456, Nehru Place, Delhi</p>
+                <p>📅 2025-01-21 | ⏰ 02:00 PM</p>
+                <p>💰 ₹349</p>
+                <button class="book-btn" style="width:auto; margin-top:10px; background: green;">Mark Complete ✅</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>🏠 HomeFixAI Provider Dashboard © 2025</p>
+    </footer>
+
+</body>
+</html>

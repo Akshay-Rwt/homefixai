@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot - HomeFixAI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">🏠 HomeFix<span>AI</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="chatbot.html" class="active">AI Chatbot</a></li>
+            <li><a href="booking.html">My Bookings</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- CHATBOT -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>🤖 AI Diagnostic Assistant</h2>
+            <p>Describe your home problem and I'll find the right service for you!</p>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <!-- Welcome message -->
+            <div class="message bot">
+                👋 Hello! I'm your AI home service assistant.<br><br>
+                Tell me what's wrong — for example:<br>
+                • "My AC is not cooling"<br>
+                • "Water leaking from pipe"<br>
+                • "Light switch not working"
+            </div>
+        </div>
+
+        <!-- Typing indicator -->
+        <div class="typing-indicator" id="typingIndicator">
+            🤖 AI is thinking...
+        </div>
+
+        <!-- Input area -->
+        <div class="chat-input-area">
+            <input 
+                type="text" 
+                id="chatInput" 
+                placeholder="Describe your problem..." 
+                onkeypress="if(event.key === 'Enter') sendMessage()"
+            >
+            <button onclick="sendMessage()">Send 🚀</button>
+        </div>
+    </div>
+
+    <script src="js/chatbot.js"></script>
+
+</body>
+</html>

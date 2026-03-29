@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeFixAI - Smart Home Services</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">🏠 HomeFix<span>AI</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="chatbot.html">AI Chatbot</a></li>
+            <li><a href="booking.html">My Bookings</a></li>
+            <li><a href="login.html" id="loginBtn">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>🔧 Home Services Made <span style="color: #ffd700;">Intelligent</span></h1>
+        <p>Don't know what's wrong? Our AI diagnoses your problem and books the right expert!</p>
+        <a href="chatbot.html">
+            <button class="hero-btn">🤖 Try AI Diagnosis</button>
+        </a>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+        <h2 class="section-title">Why HomeFixAI?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">🤖</div>
+                <h3>AI-Powered Diagnosis</h3>
+                <p>Describe your problem in plain English. Our AI finds the right service for you.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">⚡</div>
+                <h3>Instant Booking</h3>
+                <p>Book verified professionals in just 2 clicks. No hassle.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">💰</div>
+                <h3>Transparent Pricing</h3>
+                <p>Know the exact price before booking. No hidden charges.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR SERVICES -->
+    <section class="section">
+        <h2 class="section-title">Popular Services</h2>
+        <div class="services-grid" id="popularServices">
+            <!-- Filled by JavaScript -->
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" style="background: white; max-width: 100%; padding: 60px 30px;">
+        <h2 class="section-title">How It Works</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">💬</div>
+                <h3>Step 1: Describe</h3>
+                <p>"My AC is making weird noise and not cooling"</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔍</div>
+                <h3>Step 2: AI Diagnoses</h3>
+                <p>Our RAG-powered AI identifies the exact problem</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">✅</div>
+                <h3>Step 3: Book & Fix</h3>
+                <p>Book the recommended expert instantly</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>🏠 HomeFixAI © 2025 | Built with AI (RAG + LLM) | B.Tech AI/ML Project</p>
+    </footer>
+
+    <script>
+        // Load popular services on home page
+        async function loadPopularServices() {
+            try {
+                const response = await fetch('http://localhost:5000/services');
+                const data = await response.json();
+                
+                const container = document.getElementById('popularServices');
+                
+                // Show first 3 services
+                data.services.slice(0, 3).forEach(service => {
+                    container.innerHTML += `
+                        <div class="service-card">
+                            <span class="category-tag">${service.category}</span>
+                            <h3>${service.name}</h3>
+                            <p>${service.description}</p>
+                            <div class="price">₹${service.price}</div>
+                            <div class="duration">⏱️ ${service.duration}</div>
+                            <button class="book-btn" onclick="window.location.href='booking.html?id=${service.id}'">
+                                Book Now
+                            </button>
+                        </div>
+                    `;
+                });
+            } catch (error) {
+                document.getElementById('popularServices').innerHTML = 
+                    '<p style="text-align:center; color:#999;">Start backend server to see services</p>';
+            }
+        }
+        
+        loadPopularServices();
+    </script>
+
+</body>
+</html>

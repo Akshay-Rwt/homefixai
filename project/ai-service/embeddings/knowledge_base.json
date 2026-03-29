@@ -1,0 +1,428 @@
+[
+{
+"service_id": 101,
+"problem": "AC not cooling",
+"category": "AC",
+"possible_causes": ["Gas leakage", "Dirty filter", "Compressor issue"],
+"recommended_service": "AC Repair Technician",
+"price": 499,
+"description": "AC not cooling properly, warm air coming, temperature not dropping"
+},
+{
+"service_id": 102,
+"problem": "AC water leakage",
+"category": "AC",
+"possible_causes": ["Blocked drain pipe", "Frozen coil", "Low refrigerant"],
+"recommended_service": "AC Leak Repair",
+"price": 399,
+"description": "Water dripping from AC, leaking inside, water on wall"
+},
+{
+"service_id": 103,
+"problem": "AC bad smell",
+"category": "AC",
+"possible_causes": ["Mold buildup", "Dirty filter", "Dead insect"],
+"recommended_service": "AC Deep Cleaning",
+"price": 599,
+"description": "AC smells bad, foul odor, musty smell when AC turns on"
+},
+{
+"service_id": 201,
+"problem": "Pipe leakage",
+"category": "Plumbing",
+"possible_causes": ["Corroded pipe", "Loose joint", "High pressure"],
+"recommended_service": "Plumber - Pipe Repair",
+"price": 349,
+"description": "Water leaking from pipe, dripping tap, pipe burst"
+},
+{
+"service_id": 202,
+"problem": "Low water pressure",
+"category": "Plumbing",
+"possible_causes": ["Clogged pipe", "Valve issue", "Municipal supply problem"],
+"recommended_service": "Plumber - Pressure Fix",
+"price": 299,
+"description": "Low water pressure, slow water flow, weak shower pressure"
+},
+{
+"service_id": 301,
+"problem": "Switch not working",
+"category": "Electrical",
+"possible_causes": ["Faulty wiring", "Burned switch", "Loose connection"],
+"recommended_service": "Electrician - Switch Repair",
+"price": 199,
+"description": "Switch not working, light not turning on, fan switch broken"
+},
+{
+"service_id": 302,
+"problem": "Power outage",
+"category": "Electrical",
+"possible_causes": ["Tripped MCB", "Faulty wiring", "Overload"],
+"recommended_service": "Electrician - Wiring Check",
+"price": 449,
+"description": "No power in house, frequent tripping, partial power outage"
+}
+,
+{
+"service_id": 104,
+"problem": "AC making noise",
+"category": "AC",
+"possible_causes": ["Loose fan blade", "Motor issue", "Debris in unit"],
+"recommended_service": "AC Noise Inspection",
+"price": 349,
+"description": "AC making loud noise, rattling sound, unusual vibration"
+},
+{
+"service_id": 105,
+"problem": "AC not turning on",
+"category": "AC",
+"possible_causes": ["Power issue", "Faulty thermostat", "Blown fuse"],
+"recommended_service": "AC Electrical Check",
+"price": 399,
+"description": "AC not starting, no response when turned on"
+},
+{
+"service_id": 203,
+"problem": "Blocked drain",
+"category": "Plumbing",
+"possible_causes": ["Hair clog", "Food waste buildup", "Grease blockage"],
+"recommended_service": "Drain Cleaning",
+"price": 299,
+"description": "Water not draining properly, sink blockage, slow drainage"
+},
+{
+"service_id": 204,
+"problem": "Toilet not flushing",
+"category": "Plumbing",
+"possible_causes": ["Broken flush valve", "Low tank water level", "Clogged pipe"],
+"recommended_service": "Toilet Flush Repair",
+"price": 349,
+"description": "Toilet flush not working, weak flush, water not clearing"
+},
+{
+"service_id": 205,
+"problem": "Geyser water leakage",
+"category": "Plumbing",
+"possible_causes": ["Tank corrosion", "Loose pipe connection", "Pressure valve issue"],
+"recommended_service": "Geyser Leak Repair",
+"price": 449,
+"description": "Water leaking from geyser, dripping from heater unit"
+},
+{
+"service_id": 303,
+"problem": "Fan not working",
+"category": "Electrical",
+"possible_causes": ["Capacitor failure", "Loose wiring", "Motor damage"],
+"recommended_service": "Ceiling Fan Repair",
+"price": 249,
+"description": "Fan not spinning, humming sound, fan stopped working"
+},
+{
+"service_id": 304,
+"problem": "Light flickering",
+"category": "Electrical",
+"possible_causes": ["Loose wiring", "Faulty bulb holder", "Voltage fluctuation"],
+"recommended_service": "Electrical Wiring Check",
+"price": 199,
+"description": "Lights flickering, unstable brightness, blinking bulb"
+},
+{
+"service_id": 305,
+"problem": "Socket not working",
+"category": "Electrical",
+"possible_causes": ["Loose wiring", "Burnt socket", "Circuit overload"],
+"recommended_service": "Socket Replacement",
+"price": 199,
+"description": "Power socket not working, charger not charging"
+},
+{
+"service_id": 401,
+"problem": "Washing machine not spinning",
+"category": "Appliance",
+"possible_causes": ["Motor issue", "Broken belt", "Load imbalance"],
+"recommended_service": "Washing Machine Repair",
+"price": 499,
+"description": "Washing machine drum not spinning, clothes not washing properly"
+},
+{
+"service_id": 402,
+"problem": "Refrigerator not cooling",
+"category": "Appliance",
+"possible_causes": ["Compressor failure", "Gas leakage", "Dirty condenser coil"],
+"recommended_service": "Refrigerator Repair",
+"price": 599,
+"description": "Fridge not cooling, food spoiling, freezer not freezing"
+}
+,
+{
+"service_id": 403,
+"problem": "Washing machine leaking water",
+"category": "Appliance",
+"possible_causes": ["Damaged hose", "Loose connection", "Drain pump issue"],
+"recommended_service": "Washing Machine Leak Repair",
+"price": 449,
+"description": "Water leaking from washing machine during wash cycle"
+},
+{
+"service_id": 404,
+"problem": "Refrigerator making noise",
+"category": "Appliance",
+"possible_causes": ["Faulty fan motor", "Loose compressor", "Ice buildup"],
+"recommended_service": "Refrigerator Noise Repair",
+"price": 399,
+"description": "Fridge making loud humming or buzzing noise"
+},
+{
+"service_id": 501,
+"problem": "Door lock not working",
+"category": "Carpentry",
+"possible_causes": ["Broken lock mechanism", "Rust buildup", "Loose screws"],
+"recommended_service": "Door Lock Repair",
+"price": 299,
+"description": "Door lock stuck, key not turning, lock jammed"
+},
+{
+"service_id": 502,
+"problem": "Door hinge loose",
+"category": "Carpentry",
+"possible_causes": ["Loose screws", "Damaged hinge", "Wood wear"],
+"recommended_service": "Door Hinge Fix",
+"price": 249,
+"description": "Door making creaking sound or not closing properly"
+},
+{
+"service_id": 503,
+"problem": "Broken window frame",
+"category": "Carpentry",
+"possible_causes": ["Wood damage", "Termite attack", "Frame misalignment"],
+"recommended_service": "Window Frame Repair",
+"price": 399,
+"description": "Window frame broken, loose or difficult to close"
+},
+{
+"service_id": 601,
+"problem": "Wall paint peeling",
+"category": "Painting",
+"possible_causes": ["Moisture in wall", "Poor paint quality", "Old paint layer"],
+"recommended_service": "Wall Repainting Service",
+"price": 799,
+"description": "Wall paint peeling off, patches visible on wall"
+},
+{
+"service_id": 602,
+"problem": "Wall cracks",
+"category": "Painting",
+"possible_causes": ["Structural movement", "Poor plastering", "Temperature changes"],
+"recommended_service": "Wall Crack Repair & Paint",
+"price": 699,
+"description": "Visible cracks in wall, plaster damage"
+},
+{
+"service_id": 603,
+"problem": "Ceiling paint damage",
+"category": "Painting",
+"possible_causes": ["Water seepage", "Old paint", "Humidity"],
+"recommended_service": "Ceiling Repainting",
+"price": 749,
+"description": "Ceiling paint damage, stains, peeling paint"
+},
+{
+"service_id": 701,
+"problem": "WiFi not working",
+"category": "Electronics",
+"possible_causes": ["Router issue", "ISP problem", "Cable disconnection"],
+"recommended_service": "Router & Network Check",
+"price": 299,
+"description": "WiFi not connecting, internet dropping frequently"
+},
+{
+"service_id": 702,
+"problem": "TV no display",
+"category": "Electronics",
+"possible_causes": ["Backlight failure", "Power board issue", "Loose HDMI connection"],
+"recommended_service": "TV Display Repair",
+"price": 549,
+"description": "TV turning on but no picture or blank screen"
+}
+,
+{
+"service_id": 801,
+"problem": "AC remote not responding",
+"category": "AC",
+"possible_causes": ["Dead batteries", "Sensor issue", "Remote circuit failure"],
+"recommended_service": "AC Remote Diagnosis",
+"price": 199,
+"description": "AC not responding to remote control commands"
+},
+{
+"service_id": 802,
+"problem": "AC ice buildup on coil",
+"category": "AC",
+"possible_causes": ["Restricted airflow", "Low refrigerant", "Dirty evaporator coil"],
+"recommended_service": "AC Coil Inspection",
+"price": 449,
+"description": "Ice forming on AC indoor coil, cooling reduced"
+},
+{
+"service_id": 803,
+"problem": "AC outdoor unit vibrating",
+"category": "AC",
+"possible_causes": ["Loose mounting bolts", "Fan imbalance", "Compressor vibration"],
+"recommended_service": "AC Outdoor Unit Stabilization",
+"price": 399,
+"description": "Outdoor AC unit shaking or vibrating excessively"
+},
+{
+"service_id": 804,
+"problem": "AC airflow very weak",
+"category": "AC",
+"possible_causes": ["Blocked air vent", "Dirty blower fan", "Duct obstruction"],
+"recommended_service": "AC Airflow Restoration",
+"price": 449,
+"description": "AC running but airflow very weak from vents"
+},
+{
+"service_id": 901,
+"problem": "Bathroom exhaust fan noisy",
+"category": "Electrical",
+"possible_causes": ["Dust buildup", "Fan bearing wear", "Loose mounting"],
+"recommended_service": "Exhaust Fan Repair",
+"price": 249,
+"description": "Bathroom exhaust fan making loud noise"
+},
+{
+"service_id": 902,
+"problem": "MCB overheating",
+"category": "Electrical",
+"possible_causes": ["Circuit overload", "Loose wiring", "Faulty breaker"],
+"recommended_service": "Electrical Load Inspection",
+"price": 449,
+"description": "MCB panel heating or smelling burnt"
+},
+{
+"service_id": 903,
+"problem": "Doorbell not ringing",
+"category": "Electrical",
+"possible_causes": ["Transformer failure", "Broken button", "Disconnected wiring"],
+"recommended_service": "Doorbell Repair",
+"price": 199,
+"description": "Doorbell button pressed but no ringing sound"
+},
+{
+"service_id": 904,
+"problem": "Tube light starter issue",
+"category": "Electrical",
+"possible_causes": ["Faulty starter", "Loose holder", "Old tube light"],
+"recommended_service": "Tube Light Repair",
+"price": 149,
+"description": "Tube light blinking repeatedly before turning on"
+},
+{
+"service_id": 1001,
+"problem": "Water tank overflow",
+"category": "Plumbing",
+"possible_causes": ["Faulty float valve", "Sensor malfunction", "Manual switch left on"],
+"recommended_service": "Water Tank Float Repair",
+"price": 299,
+"description": "Water tank overflowing continuously"
+},
+{
+"service_id": 1002,
+"problem": "Geyser not heating properly",
+"category": "Plumbing",
+"possible_causes": ["Heating element damage", "Thermostat issue", "Scale buildup"],
+"recommended_service": "Geyser Heating Repair",
+"price": 449,
+"description": "Geyser water lukewarm or not heating"
+},
+{
+"service_id": 1003,
+"problem": "Toilet seat loose",
+"category": "Plumbing",
+"possible_causes": ["Loose bolts", "Worn hinge", "Plastic seat crack"],
+"recommended_service": "Toilet Seat Fix",
+"price": 199,
+"description": "Toilet seat moving or unstable when sitting"
+},
+{
+"service_id": 1004,
+"problem": "Kitchen sink foul smell",
+"category": "Plumbing",
+"possible_causes": ["Food residue", "Drain blockage", "Bacterial buildup"],
+"recommended_service": "Sink Drain Sanitization",
+"price": 299,
+"description": "Bad odor coming from kitchen sink drain"
+},
+{
+"service_id": 1101,
+"problem": "Wardrobe door misaligned",
+"category": "Carpentry",
+"possible_causes": ["Loose hinge", "Frame expansion", "Improper installation"],
+"recommended_service": "Wardrobe Door Alignment",
+"price": 349,
+"description": "Wardrobe door not closing properly"
+},
+{
+"service_id": 1102,
+"problem": "Drawer sliding issue",
+"category": "Carpentry",
+"possible_causes": ["Broken slider", "Dust in rail", "Bent track"],
+"recommended_service": "Drawer Track Repair",
+"price": 249,
+"description": "Drawer stuck or not sliding smoothly"
+},
+{
+"service_id": 1103,
+"problem": "Termite damage in wood",
+"category": "Carpentry",
+"possible_causes": ["Termite infestation", "Moist wood", "Untreated furniture"],
+"recommended_service": "Wood Termite Treatment",
+"price": 799,
+"description": "Wood furniture damaged with powder residue"
+},
+{
+"service_id": 1201,
+"problem": "Laptop overheating",
+"category": "Electronics",
+"possible_causes": ["Dust in fan", "Thermal paste dry", "Blocked ventilation"],
+"recommended_service": "Laptop Cooling Service",
+"price": 599,
+"description": "Laptop getting very hot during use"
+},
+{
+"service_id": 1202,
+"problem": "Smart TV WiFi disconnecting",
+"category": "Electronics",
+"possible_causes": ["Router compatibility", "Firmware bug", "Weak signal"],
+"recommended_service": "Smart TV Network Setup",
+"price": 349,
+"description": "Smart TV repeatedly disconnecting from WiFi"
+},
+{
+"service_id": 1203,
+"problem": "Microwave not heating food",
+"category": "Appliance",
+"possible_causes": ["Magnetron failure", "Door switch issue", "High voltage diode fault"],
+"recommended_service": "Microwave Heating Repair",
+"price": 499,
+"description": "Microwave runs but food remains cold"
+},
+{
+"service_id": 1204,
+"problem": "Induction cooktop not detecting pan",
+"category": "Appliance",
+"possible_causes": ["Sensor malfunction", "Incompatible cookware", "Control board issue"],
+"recommended_service": "Induction Cooktop Repair",
+"price": 449,
+"description": "Induction stove showing error or not detecting pan"
+},
+{
+"service_id": 1205,
+"problem": "Water purifier slow filtration",
+"category": "Appliance",
+"possible_causes": ["Clogged filter", "Low inlet pressure", "Membrane blockage"],
+"recommended_service": "RO Filter Replacement",
+"price": 399,
+"description": "Water purifier taking very long to fill tank"
+}
+]
